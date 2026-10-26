@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f6f2" />
+  <meta name="description" content="A clear, interactive guide to resolving messy business records across independent data sources." />
+  <title>Meridian — Business identity, made clear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Meridian home"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>meridian<span class="brand-dot">.</span></span></a>
+    <nav class="nav-links" aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#explorer">Explore matches</a><a href="#method">Method</a></nav>
+    <a class="top-cta" href="#explorer">Explore the demo <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> BUSINESS ENTITY RESOLUTION <span class="eyebrow-line"></span> DATA CHALLENGE</div>
+        <h1>One business.<br />Many <span class="serif">versions.</span><br /><span class="green-text">One clear identity.</span></h1>
+        <p class="hero-lede">Business data rarely arrives in a neat package. Meridian connects the messy fragments across sources and helps reveal which records belong to the same real-world business.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#explorer">Explore the matches <span>→</span></a><a class="text-link" href="#how-it-works"><span class="play">▶</span> See how it works</a></div>
+        <div class="hero-note"><span class="note-check">✓</span><span>Built using only the supplied data<br /><small>No external business lookups</small></span></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of three business records resolving to one identity">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="source-card source-a"><span class="source-label"><b class="source-badge badge-one">01</b> SOURCE ONE</span><strong>Riverbend Coffee House</strong><small>12 Lake Road, Pune</small><div class="card-tags"><span>REFERENCE</span><span>INDIA</span></div></div>
+        <div class="source-card source-b"><span class="source-label"><b class="source-badge badge-two">02</b> SOURCE TWO</span><strong>River Bend Coffee House</strong><small>12 Lake Rd, Pune 411001</small><div class="card-tags"><span>NAME VARIANT</span><span>INDIA</span></div></div>
+        <div class="source-card source-c"><span class="source-label"><b class="source-badge badge-three">03</b> SOURCE THREE</span><strong>Riverbend Cafe</strong><small>12 Lake Road, Pune</small><div class="card-tags"><span>SHORT NAME</span><span>INDIA</span></div></div>
+        <svg class="connectors" viewBox="0 0 560 460" fill="none" aria-hidden="true"><path d="M247 130 C298 160 300 184 314 204"/><path d="M320 260 C294 300 273 318 248 340"/><path d="M405 227 C452 227 470 227 493 227"/><circle cx="314" cy="204" r="4"/><circle cx="320" cy="260" r="4"/><circle cx="493" cy="227" r="4"/></svg>
+        <div class="match-node"><span class="node-rays">✳</span><div class="node-core">M</div><span class="node-label">SAME ENTITY</span></div>
+        <div class="confidence-card"><span class="confidence-icon">↗</span><div><small>CONFIDENT MATCH</small><strong>98.4%</strong></div><span class="confidence-pill">MATCH</span></div>
+        <div class="visual-caption"><span class="caption-pulse"></span> THREE RECORDS <span>→</span> ONE BUSINESS</div>
+      </div>
+      <div class="hero-bottom"><span>THE CHALLENGE</span><span class="hero-bottom-line"></span><span>Connecting fragmented business identity data across independent sources.</span><span class="scroll-cue">SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="stats-band"><div class="wrap stats-grid"><div class="stats-intro"><span class="eyebrow light-eyebrow">THE PROBLEM, IN A SNAPSHOT</span><p>Same business.<br /><em>Different data.</em></p></div><div class="stat"><strong>03</strong><span>independent<br />data sources</span></div><div class="stat"><strong>∞</strong><span>ways to write<br />one business name</span></div><div class="stat"><strong>01</strong><span>identity we’re<br />trying to uncover</span></div><div class="stat-mark">M<span>.</span></div></div></section>
+
+    <section class="section wrap" id="how-it-works">
+      <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> THE PROCESS</div><h2>From noisy records<br />to <span class="serif">meaningful links.</span></h2></div><p>Think of Source 1 as the anchor. For every business in it, we look across Sources 2 and 3 for records that might describe the same place.</p></div>
+      <div class="steps"><article class="step-card"><span class="step-number">01 / PREPARE</span><div class="step-graphic prepare-graphic"><div class="mini-row"><b>S1</b><span>Northstar Auto Repair LLC</span><i>→</i></div><div class="mini-row faded"><b>S2</b><span>Northstar Automotive Repair</span><i>→</i></div><div class="mini-row faded"><b>S3</b><span>North Star Auto Repair</span><i>→</i></div><div class="clean-chip">✳ NORMALIZED</div></div><h3>Make the text comparable</h3><p>Normalize punctuation, case, accents and common legal suffixes while preserving each original record.</p></article><article class="step-card"><span class="step-number">02 / FIND CANDIDATES</span><div class="step-graphic candidate-graphic"><span class="candidate-label">SOURCE 1</span><div class="candidate-center">Northstar<br /><small>Auto Repair</small></div><span class="candidate-pill pill-1">Northstar Automotive</span><span class="candidate-pill pill-2">North Star Auto</span><span class="candidate-pill pill-3">Pinecrest Bikes</span><i class="orbit-dot dot-1"></i><i class="orbit-dot dot-2"></i></div><h3>Search a smaller set</h3><p>Blocking uses shared name or address clues to select plausible candidates before scoring.</p></article><article class="step-card"><span class="step-number">03 / SCORE &amp; MATCH</span><div class="step-graphic score-graphic"><div class="score-row"><span>Name similarity</span><b>94%</b><i><u style="width:94%"></u></i></div><div class="score-row"><span>Address similarity</span><b>88%</b><i><u style="width:88%"></u></i></div><div class="score-row"><span>Country agrees</span><b class="yes">YES</b><i><u style="width:100%"></u></i></div><div class="score-result">✓ &nbsp; STRONG MATCH</div></div><h3>Weigh the evidence</h3><p>A lightweight matcher compares name, address and country signals to rank each candidate.</p></article></div>
+    </section>
+
+    <section class="explorer-section" id="explorer"><div class="wrap">
+      <div class="section-heading explorer-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> THE MATCH EXPLORER</div><h2>See the connections<br /><span class="serif">for yourself.</span></h2></div><p>Pick a reference business to see what the candidate generator found across the other sources.</p></div>
+      <div class="explorer-layout"><aside class="entity-list"><div class="entity-list-head"><span>REFERENCE RECORDS</span><span id="entity-count">10 ENTITIES</span></div><div id="entity-buttons"></div><div class="synthetic-tag"><span>◈</span> SYNTHETIC DEMO DATA</div></aside><div class="match-detail" id="match-detail" aria-live="polite"></div></div>
+      <div class="explorer-foot"><span><b class="legend-dot matched"></b> Selected as a match</span><span><b class="legend-dot candidate"></b> Candidate, not selected</span><span class="metric-note">Sample predictions are illustrative—not challenge results.</span></div>
+    </div></section>
+
+    <section class="method-section wrap" id="method"><div class="method-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> THE METHOD</div><h2>Careful signals.<br /><span class="serif">Clear decisions.</span></h2><p>Our MVP keeps the approach explainable. It learns from labeled training pairs, then focuses on the similarities a person would check first.</p><a class="text-link dark-link" href="code/business_entity_resolution/README.md">Read the implementation notes <span>↗</span></a></div><div class="method-list"><div class="method-item"><span class="method-icon">Aa</span><div><h3>Name similarity</h3><p>Token overlap and character sequence help handle abbreviations, punctuation and small typos.</p></div><span class="method-index">01</span></div><div class="method-item"><span class="method-icon">⌖</span><div><h3>Address similarity</h3><p>Shared address terms help distinguish two branches with similar business names.</p></div><span class="method-index">02</span></div><div class="method-item"><span class="method-icon">◎</span><div><h3>Country agreement</h3><p>Country is treated as an open label, so unseen labels like France remain in scope.</p></div><span class="method-index">03</span></div><div class="method-item"><span class="method-icon">⌘</span><div><h3>Precision-aware matching</h3><p>Conservative scoring reflects the challenge’s precision-weighted F<sub>0.5</sub> metric.</p></div><span class="method-index">04</span></div></div></section>
+
+    <section class="closing"><div class="wrap closing-inner"><div><div class="eyebrow light-eyebrow">THE BIG IDEA</div><h2>Better connections<br /><span class="serif">start with better identity.</span></h2></div><a class="button button-light" href="#top">Back to the beginning <span>↑</span></a><div class="closing-orb">✳</div></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i><i></i></span><span>meridian<span class="brand-dot">.</span></span></a><span>BUSINESS ENTITY RESOLUTION · SAME-DAY MVP</span><span>Built for the challenge. <b>Grounded in the data.</b></span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
